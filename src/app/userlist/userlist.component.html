@@ -1,0 +1,49 @@
+<body class="body4">
+  
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand text-white " routerLink="/dashboard">Sense of Smell</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active text-white" aria-current="page" routerLink="/dashboard">Dashboard</a>
+                    <a class="nav-link text-white" routerLink="/productlist">Products</a>
+                    <a class="nav-link text-white" routerLink="/userlist">Users</a>
+                    <a class="nav-link text-white" routerLink="/delete">Delete</a>
+                    <button >Logout</button>
+                 </div>
+                </div>
+              </div>
+            </nav>
+      <h3 style="color: rgb(110, 52, 172);">Users list</h3>
+      <table>
+          <thead>
+              <tr>
+                <th>Sl No.</th>
+                  <th>Usersname</th>
+                  <th>Email</th>
+                  <th>Password</th>
+              </tr>
+          </thead>
+      
+      
+          <tbody>
+              <tr *ngFor="let lists of list; let i=index">
+                  <th>{{i+1}}</th>
+                  <th>{{lists.uname}}</th>
+                  <th>{{lists.email}}</th>
+                  <th>{{lists.password}}</th>
+              </tr>
+          </tbody>
+      </table><br>
+      <a style="text-decoration:none; color: rgb(140, 140, 154); border: solid; background-color: rgb(58, 2, 78); width: 100px; margin-left: auto;margin-right: auto;" routerLink="register" routerLink="/dashboard">Dashboard</a>
+
+  
+  
+  
+  
+
+</body>

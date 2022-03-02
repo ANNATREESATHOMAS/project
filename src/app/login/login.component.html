@@ -1,0 +1,53 @@
+<body class="body2" style="margin-top: -50px;">
+    
+    <div >
+        <div class=row>
+            <div class="col-md-6 lg-col-6">
+                <form action="" [formGroup]="adminloginForm" (ngSubmit)="adminlogin()">
+                    <div class="row mt-5">
+                        <div class="card bg bg-warning text-center " style="width: 18rem; margin-right: auto; margin-left: auto; margin-top: 180px;  height: 350px; width: 450px;">
+                            <div class="card-header  ">
+                               <strong>ADMIN LOGIN</strong>
+                            </div>
+                            <ul class="list-group list-group-flush bg bg-dark mt-3">
+                                <li class="list-group-item bg bg-dark mt-3"><input type="text"  id="username" name="username" class="form-control" formControlName="username" placeholder="Username" required><br>
+                                    <div *ngIf="(this.adminloginForm.get('username')?.touched||this.adminloginForm.get('username')?.dirty)&& this.adminloginForm.get('username')?.errors" class="error">Invalid Username</div>
+                                </li>
+                                <li class="list-group-item bg bg-dark"><input type="password"  id="password" name="pswd" class="form-control" formControlName="pswd" placeholder="Enter Password" required><br>
+                                    <div *ngIf="(this.adminloginForm.get('pswd')?.touched||this.adminloginForm.get('pswd')?.dirty)&& this.adminloginForm.get('pswd')?.errors" class="error">Invalid Password</div>
+            
+                                </li>
+                            </ul>
+                            <button type="submit"  class="btn btn-light w-50 mt-3" style="margin-left: auto;margin-right: auto;">login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 lg-col-6">
+                <form action="" [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="row mt-5">
+                        <div class="card bg bg-warning text-center " style="width: 18rem; margin-right: auto; margin-left: auto; margin-top: 180px;  height: 350px; width: 450px;">
+                            <div class="card-header  ">
+                               <strong>USER LOGIN</strong>
+                            </div>
+                            <ul class="list-group list-group-flush bg bg-dark mt-3">
+                                <li class="list-group-item bg bg-dark mt-3">  <input type="email" id ="email" name="email" formControlName="email" class="form-control" placeholder="Email Id" required=""><br>
+                                    <div *ngIf="(this.loginForm.get('email')?.touched||this.loginForm.get('email')?.dirty)&& this.loginForm.get('email')?.errors" class="error">Invalid Email Id</div>
+                                </li>
+                                <li class="list-group-item bg bg-dark"><input type="password" id="pass"class="form-control" name="pswd" formControlName="pswd" placeholder="Password" required=""><br>
+                                    <div *ngIf="(this.loginForm.get('pswd')?.touched||this.loginForm.get('pswd')?.dirty)&& this.loginForm.get('pswd')?.errors" class="error">Invalid password</div>
+            
+                                </li>
+                            </ul>
+                            <button type="submit"  class="btn btn-light w-50 mt-3" style="margin-left: auto;margin-right: auto;">login</button>
+                            <a style="text-decoration:none; color: darkblue; border: solid; background-color: cornsilk; width: 100px;margin-left: auto;margin-right: auto;margin-top: 5px;" routerLink="register">Register</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+       
+    </div>
+ </body>
+ 

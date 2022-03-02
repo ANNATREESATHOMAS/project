@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+.body1{
+    background-image:url(./assets/image1.jpg);
+    background-size: cover;
+    height: 740px;
+}
+.body2{
+    background-image:url(./assets/image2.jpg);
+    background-size: cover;
+    height: 740px;
+   
+}
+.body3{
+    background-image:url(./assets/image3.jpg);
+    background-size: cover;
+    height: 740px;
+   
+}
+.body4{
+    background-image:url(./assets/image3.jpg);
+    background-size: cover;
+    height: 740px;
+   
+}
+.body5{
+    background-image:url(./assets/image3.jpg);
+    background-size: cover;
+    height: 740px;
+   
+}
+
